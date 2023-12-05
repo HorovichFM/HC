@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Monserrat";
+  src: url(assets/fonts/ofont.ru_Ubuntu.ttf);
+}
+
+.body {
+  position: absolute;
+  font-family: monserrat, sans-serif;
+  max-width: 1280px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, #9702a7, #1924b1);
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 235, 205);
+  height: 100px;
+  z-index: 100;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+}
+
+.main-area {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.is-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 
+.main-area.is-header {
+  /* justify-content: center;
+  align-items: flex-start; 
+  
+} /* Как правильно, применять каскадность в данном случае 
+или разными класами оперировать (изначально было два класса) */
+
+.header__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.logo {
+  background-image: url("../photos/logo.png");
+  background-color: #000;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; 
+  min-height: 30px;
+  min-width: 30px; 
+  /* А для чего мы выставили мин хеит и мин видтх - лучше же было бы, чтобы лого пропадало */
+  /* запомнить правила background*/
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-nav {
+  width: max-content;
+  height: max-content;
+}
+
+.header-nav__burger-btn {
+  width: 100px;
+  height: 100px;
+}
+
+.header-nav-burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 25px;
+  gap: 3px;
+}
+
+.burger-btn__line {
+  width: 100%;
+  height: 3px;
+  opacity: 1;
+  background-color: black;
+}
+
+.top-line .low-line .is-clicked {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.middle-line .is-clicked {
+  width: 0;
+  opacity: 0;
+}
+
+.dropdown-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-link {
+  padding: 16px 24px;
+  font-size: 30px;
+}
+
+/* в среду встречаемся 
+1. Раскидать css по селекторам элемента и блока. Сгруппировать внутри селектора блока и элемента
+2. Частные случаи модификаторов (is-visible) продумать поведение - прописать модификаторы. 
+3. посмотри связку гитхаба (кодсэндбокс) - как интегрируются, какие фичи позволяют*/
+
+.main {
+  padding-top: 120px;
+  width: 100vw;
+}
+
+.intro__title {
+  padding: 10vw;
+  font-size: 30px;
+}
+
+.intro-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-title__name {
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+}
+
+.intro-title__job {
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+}
+
+.intro__features {
+  background-color: rgb(230, 214, 193); 
+  /* rgb(255, 235, 205); */
+  border-radius: 20px;
+  color: black;
+}
+
+.intro-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.intro-feature {
+  width: 200px;
+  margin: 30px;
+}
+
+.intro-features__text {
+  text-align: center;
+}
+
+.intro-feature__icon {
+  height: 200px;
+}
+
+.icon-img {
+  margin: 0 0 0 0;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+.about__descr {
+  padding-left: 80px;
+  padding-top: 5px;
+}
+
+.about-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-descr__title {
+  font-size: 25px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.about-descr__text {
+  width: 100%;
+}
+
+.about__photo {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+}
+
+.about-photo {
+  display: flex;
+}
+
+.about-photo__img {
+  max-width: 100%;
+}
+
+.about-skills {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  width: 30%;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 150px;
+}
