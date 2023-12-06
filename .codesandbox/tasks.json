@@ -8,6 +8,11 @@
       "name": "run index.html",
       "command": "run index.html",
       "runAtStart": true
+    },
+    "": {
+      "name": "",
+      "command": "",
+      "runAtStart": true
     }
   }
 }
